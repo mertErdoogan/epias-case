@@ -1,0 +1,57 @@
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  .icon-area {
+    display: flex;
+    svg {
+      cursor: pointer;
+      width: 20px;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+    .tooltip-root {
+      position: relative;
+      cursor: pointer;
+      margin-right: 10px;
+      .tooltip {
+        position: absolute;
+        min-width: 100px;
+        background-color: white;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        padding: 10px;
+        box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.39);
+        .close-icon {
+          position: absolute;
+          top: 0;
+          right: 10px;
+          font-size: 15px;
+          font-weight: semibold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.dialog-root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .dialog-panel {
+    padding: 20px;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.39);
+  }
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+}
