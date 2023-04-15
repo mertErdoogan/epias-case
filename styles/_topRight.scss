@@ -1,0 +1,37 @@
+.top-right-root {
+  width: 100%;
+  .top-right-wrapper {
+    display: flex;
+    span {
+      &.title {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .table th,
+  .table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
